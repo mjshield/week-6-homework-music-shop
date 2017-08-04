@@ -1,11 +1,12 @@
 package music_management;
 
-public class Piano {
+public class Piano extends Instrument {
 
   private int tensileStrength;
 
 
- public Piano(int tensileStrength) {
+ public Piano(String make, String material, String type, String colour, int tensileStrength) {
+  super(make, material, type, colour);
   this.tensileStrength = tensileStrength;
  }
 
