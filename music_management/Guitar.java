@@ -10,37 +10,37 @@ public class Guitar extends Instrument implements Sellable {
   private double sellPrice;
 
 
- public Guitar(String make, String material, String type, String colour, String description, int strings, double buyPrice, double sellPrice) {
-  super(make, material, type, colour);
-  this.description = description;
-  this.strings = strings;
-  this.buyPrice = buyPrice;
-  this.sellPrice = sellPrice;
- }
+  public Guitar(String make, String material, String type, String colour, String description, int strings, double buyPrice, double sellPrice) {
+    super(make, material, type, colour);
+    this.description = description;
+    this.strings = strings;
+    this.buyPrice = buyPrice;
+    this.sellPrice = sellPrice;
+  }
 
- public String getDescription() {
-  return this.description;
- }
+  public String getDescription() {
+    return this.description;
+  }
 
- public int getStrings() {
-  return this.strings;
- }
+  public int getStrings() {
+    return this.strings;
+  }
 
- public double getBuyPrice() {
-  return this.buyPrice;
- }
+  public double getBuyPrice() {
+    return this.buyPrice;
+  }
 
- public double getSellPrice() {
-  return this.sellPrice;
- }
+  public double getSellPrice() {
+    return this.sellPrice;
+  }
 
- public double calculateMarkup() {
-  double result = sellPrice - buyPrice;
-  return result;
- }
+  public double calculateMarkup() {
+    double result = sellPrice - buyPrice;
+    return result;
+  }
 
- public String play() {
-  return "Twang!";
- }
+  public String play() {
+    return "Twang!";
+  }
 
 }
