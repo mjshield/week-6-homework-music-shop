@@ -10,7 +10,22 @@ public class GuitarTest {
 
   @Before
   public void before() {
-    guitar = new Guitar("Yamaha", "Wood", "Acoustic", "Red", 5, 100.50, 189.99);
+    guitar = new Guitar("Yamaha", "Wood", "Acoustic", "Red", "Guitar", 5, 100.50, 189.99);
+  }
+
+  @Test
+  public void canGetDescription() {
+    assertEquals("Guitar", guitar.getDescription());
+  }
+
+  @Test
+  public void canGetBuyPrice() {
+    assertEquals(100.50, guitar.getBuyPrice(), 0.0001);
+  }
+
+  @Test
+  public void canGetSellPrice() {
+    assertEquals(189.99, guitar.getSellPrice(), 0.0001);
   }
 
   @Test
